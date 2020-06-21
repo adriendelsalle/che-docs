@@ -1,8 +1,12 @@
-// Module included in the following assemblies:
-//
-// advanced-configuration-options
-
-:parent-configuring-namespace-strategies: {context}
+---
+title: Configuring namespace strategies
+keywords:
+tags: []
+sidebar: che_7_docs
+permalink: che-7/configuring-namespace-strategies/
+folder: che-7/installation-guide
+summary:
+---
 
 [id="configuring-namespace-strategies_{context}"]
 = Configuring namespace strategies
@@ -11,7 +15,7 @@ NOTE: The term _namespace_ (Kubernetes) is used interchangeably with _project_ (
 
 The namespace strategies are configured using the `CHE_INFRA_KUBERNETES_NAMESPACE_DEFAULT` environment variable.
 
-WARNING: There are legacy variables `CHE_INFRA_KUBERNETES_NAMESPACE` and `CHE_INFRA_OPENSHIFT_PROJECT`. Keep these variables unset for a new installations. Changing these variables during an update can lead to data loss.
+WARNING: `CHE_INFRA_KUBERNETES_NAMESPACE` and `CHE_INFRA_OPENSHIFT_PROJECT` are legacy variables. Keep these variables unset for a new installations. Changing these variables during an update can lead to data loss.
 
 == One namespace per workspace strategy
 

@@ -18,57 +18,42 @@ summary:
 
 :context: {prod-id-short}-quick-starts
 
-This section contains instructions for getting quickly started with {prod}.
+This section contains instructions for getting quickly started with {prod}. Various installation methods are covered in this documentation.
 
 {prod-short} is available in two modes:
 
 * *Single-user*: Non-authenticated {prod-short}, lighter and suited for personal environments
-
 * *Multi-user*: Authenticated {prod-short} suited for organizations and developer teams
 
-You need a Kubernetes (version 1.9 or higher) or OpenShift cluster to deploy {prod-short} on.
 
-Various installation methods are covered in this documentation.
+.Prerequisites
 
-
-== On a local single-node cluster
-
-WARNING: Remember that single-node Kubernetes clusters are suited only for testing or single-user development.
-Do *NOT* use such clusters to run {prod-short} for organizations or developer teams.
-
-* link:{site-baseurl}che-7/installing-{prod-id-short}-on-codeready-containers/[CodeReady containers]
-
-* link:{site-baseurl}che-7/installing-{prod-id-short}-on-docker-desktop/[Docker Desktop]
-
-* link:{site-baseurl}che-7/installing-{prod-id-short}-on-minikube/[Minikube]
-
-* link:{site-baseurl}che-7/installing-{prod-id-short}-on-minishift/[Minishift]
+* A Kubernetes (version 1.9 or higher) or OpenShift (version 3.11 or higher) cluster to deploy {prod-short} on.
 
 
-== On a private cloud
+== Deploying {prod-short} on a local single-node cluster
 
-Create your Kubernetes `production-capable` cluster on a private cloud (__on-premise__) to run {prod-short}.
+WARNING: Single-node clusters are suited only for testing or single-user development. Do *not* use such clusters to run {prod-short} for organizations or developer teams.
 
-NOTE: `production-capable` means you can deploy clusters from __test-like__ xref:on-a-local-single-node-cluster[local single-node clusters] to production grade high-availability ones depending on your configuration (number of nodes, etc.)
+* link:{site-baseurl}che-7/installing-{prod-id-short}-on-codeready-containers/[Installing Che on CodeReady Containers]
+* link:{site-baseurl}che-7/installing-{prod-id-short}-on-docker-desktop/[Installing Che on Docker Desktop]
+* link:{site-baseurl}che-7/installing-{prod-id-short}-on-minikube/[Installing Che on Minikube]
+* link:{site-baseurl}che-7/installing-{prod-id-short}-on-minishift/[Installing Che on Minishift]
+* link:{site-baseurl}che-7/installing-{prod-id-short}-on-kind/[Installing Che on kind]
 
-* link:{site-baseurl}che-7/installing-{prod-id-short}-on-bare-metal-using-kubespray/[Bare metal] __using Kubespray__
 
-* link:{site-baseurl}che-7/installing-{prod-id-short}-on-openshift-3-using-the-operator/[OpenShift 3] __using the Operator__
+== Deploying {prod-short} on private cloud
 
-* link:{site-baseurl}che-7/installing-{prod-id-short}-on-openshift-4-using-operatorhub/[OpenShift 4] __using OperatorHub__
+* link:{site-baseurl}che-7/installing-{prod-id-short}-on-bare-metal-using-kubespray/[Installing Che on bare metal using Kubespray]
+* link:{site-baseurl}che-7/installing-{prod-id-short}-on-openshift-3-using-the-operator/[Installing Che on OpenShift 3] using the Operator
+* link:{site-baseurl}che-7/installing-{prod-id-short}-on-openshift-4-using-operatorhub/[Installing Che on OpenShift 4] using OperatorHub
 
-== On a public cloud
 
-Use a public cloud to get a Kubernetes cluster from one of the most popular cloud providers to deploy {prod-short}. 
+== Deploying {prod-short} on public cloud
 
-It offers convenient (but chargeable) on-demand horsepower.
-
-* link:{site-baseurl}che-7/deploying-che-on-kubernetes-on-aws/[Amazon Web Services]
-
-* link:{site-baseurl}che-7/installing-che-on-google-cloud-platform/[Google Cloud Platform]
-
-* link:{site-baseurl}che-7/installing-eclipse-che-on-microsoft-azure/[Microsoft Azure]
-
-* link:{site-baseurl}che-7/accessing-che-from-openshift-developer-perspective/[OpenShift Developer Perspective]
+* link:{site-baseurl}che-7/deploying-che-on-kubernetes-on-aws/[Installing Che on Amazon Web Services]
+* link:{site-baseurl}che-7/installing-che-on-google-cloud-platform/[Installing Che on Google Cloud Platform]
+* link:{site-baseurl}che-7/installing-eclipse-che-on-microsoft-azure/[Installing Che on Microsoft Azure]
+* link:{site-baseurl}che-7/accessing-che-from-openshift-developer-perspective/[Installing Che on OpenShift Developer Perspective]
 
 :context: {parent-context-of-che-quick-starts}
